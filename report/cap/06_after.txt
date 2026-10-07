@@ -1,0 +1,17 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ ls -lh --time-style=long-iso logs
+total 176K
+-rw-r--r-- 1 abhikhyath abhikhyath  80K 2026-10-02 16:35 access.log
+-rw-r--r-- 1 abhikhyath abhikhyath  530 2026-09-27 16:35 app-old.log.gz
+-rw-r--r-- 1 abhikhyath abhikhyath  50K 2026-10-07 16:35 app.log
+-rw-r--r-- 1 abhikhyath abhikhyath  224 2026-09-22 16:35 archive-recent.log.gz
+-rw-r--r-- 1 abhikhyath abhikhyath  806 2026-09-17 16:35 debug.log.gz
+-rw-r--r-- 1 abhikhyath abhikhyath  20K 2026-10-05 16:35 error.log
+-rw-r--r-- 1 abhikhyath abhikhyath 5.0K 2026-09-22 16:35 notes.txt
+-rw-r--r-- 1 abhikhyath abhikhyath  329 2026-09-25 16:35 payment service.log.gz
+abhikhyath@lenovo-LOQ11:~/lab23$ du -sh logs
+180K	logs
+abhikhyath@lenovo-LOQ11:~/lab23$ gzip -t logs/*.gz && echo 'all archives OK'
+all archives OK
+abhikhyath@lenovo-LOQ11:~/lab23$ zcat 'logs/payment service.log.gz' | head -2
+2026-10-07 16:35:38 INFO app started request id=12345 status=200
+2026-10-07 16:35:38 INFO app started request id=12345 status=200

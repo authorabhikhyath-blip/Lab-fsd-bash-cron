@@ -1,0 +1,20 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ date
+Wed Oct  7 16:38:22 UTC 2026
+abhikhyath@lenovo-LOQ11:~/lab23$ cat rotate_cron.log
+[2026-10-07 16:36:01] START dir=/home/abhikhyath/lab23/logs age>7d retention>30d dry_run=0
+[2026-10-07 16:36:01] DELETE   /home/abhikhyath/lab23/logs/archive-ancient.log.gz
+[2026-10-07 16:36:01] COMPRESS /home/abhikhyath/lab23/logs/payment service.log -> /home/abhikhyath/lab23/logs/payment service.log.gz
+[2026-10-07 16:36:01] COMPRESS /home/abhikhyath/lab23/logs/app-old.log -> /home/abhikhyath/lab23/logs/app-old.log.gz
+[2026-10-07 16:36:01] COMPRESS /home/abhikhyath/lab23/logs/debug.log -> /home/abhikhyath/lab23/logs/debug.log.gz
+[2026-10-07 16:36:01] DONE compressed=3 deleted=1 failed=0
+[2026-10-07 16:38:01] START dir=/home/abhikhyath/lab23/logs age>7d retention>30d dry_run=0
+[2026-10-07 16:38:01] DONE compressed=0 deleted=0 failed=0
+abhikhyath@lenovo-LOQ11:~/lab23$ ls logs
+access.log
+app-old.log.gz
+app.log
+archive-recent.log.gz
+debug.log.gz
+error.log
+notes.txt
+payment service.log.gz

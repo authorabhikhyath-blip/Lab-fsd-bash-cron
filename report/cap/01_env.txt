@@ -1,0 +1,11 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ uname -sr
+Linux 6.18.33.2-microsoft-standard-WSL2
+abhikhyath@lenovo-LOQ11:~/lab23$ bash --version | head -1
+GNU bash, version 5.3.9(1)-release (x86_64-pc-linux-gnu)
+abhikhyath@lenovo-LOQ11:~/lab23$ systemctl is-active cron
+active
+abhikhyath@lenovo-LOQ11:~/lab23$ systemctl status cron --no-pager | head -4
+● cron.service - Regular background program processing daemon
+     Loaded: loaded (/usr/lib/systemd/system/cron.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-07 16:35:18 UTC; 19s ago
+ Invocation: c01f4e3edb3747a6a42a0796b01c9024

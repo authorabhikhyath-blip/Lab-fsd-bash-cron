@@ -1,0 +1,8 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ ./rotate_logs.sh -d ./logs -a 7 -r 30; echo "exit code: $?"
+[2026-10-07 16:35:38] START dir=./logs age>7d retention>30d dry_run=0
+[2026-10-07 16:35:38] DELETE   ./logs/archive-ancient.log.gz
+[2026-10-07 16:35:38] COMPRESS ./logs/payment service.log -> ./logs/payment service.log.gz
+[2026-10-07 16:35:38] COMPRESS ./logs/app-old.log -> ./logs/app-old.log.gz
+[2026-10-07 16:35:38] COMPRESS ./logs/debug.log -> ./logs/debug.log.gz
+[2026-10-07 16:35:38] DONE compressed=3 deleted=1 failed=0
+exit code: 0

@@ -1,0 +1,5 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ crontab -l
+0 2 * * * /home/abhikhyath/lab23/rotate_logs.sh -d /home/abhikhyath/lab23/logs -a 7 -r 30 >> /home/abhikhyath/lab23/rotate_cron.log 2>&1
+*/2 * * * * /home/abhikhyath/lab23/rotate_logs.sh -d /home/abhikhyath/lab23/logs >> /home/abhikhyath/lab23/rotate_cron.log 2>&1
+abhikhyath@lenovo-LOQ11:~/lab23$ date
+Wed Oct  7 16:35:38 UTC 2026

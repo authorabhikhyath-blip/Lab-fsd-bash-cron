@@ -1,0 +1,13 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ ls -lh --time-style=long-iso logs
+total 548K
+-rw-r--r-- 1 abhikhyath abhikhyath  80K 2026-10-02 16:35 access.log
+-rw-r--r-- 1 abhikhyath abhikhyath 120K 2026-09-27 16:35 app-old.log
+-rw-r--r-- 1 abhikhyath abhikhyath  50K 2026-10-07 16:35 app.log
+-rw-r--r-- 1 abhikhyath abhikhyath  225 2026-08-23 16:35 archive-ancient.log.gz
+-rw-r--r-- 1 abhikhyath abhikhyath  224 2026-09-22 16:35 archive-recent.log.gz
+-rw-r--r-- 1 abhikhyath abhikhyath 200K 2026-09-17 16:35 debug.log
+-rw-r--r-- 1 abhikhyath abhikhyath  20K 2026-10-05 16:35 error.log
+-rw-r--r-- 1 abhikhyath abhikhyath 5.0K 2026-09-22 16:35 notes.txt
+-rw-r--r-- 1 abhikhyath abhikhyath  60K 2026-09-25 16:35 payment service.log
+abhikhyath@lenovo-LOQ11:~/lab23$ du -sh logs
+552K	logs

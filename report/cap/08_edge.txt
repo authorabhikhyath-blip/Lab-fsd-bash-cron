@@ -1,0 +1,14 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ ./rotate_logs.sh -d nope; echo "exit code: $?"
+[2026-10-07 16:35:38] ERROR: log directory 'nope' does not exist
+exit code: 2
+abhikhyath@lenovo-LOQ11:~/lab23$ ./rotate_logs.sh -d empty; echo "exit code: $?"
+[2026-10-07 16:35:38] START dir=empty age>7d retention>30d dry_run=0
+[2026-10-07 16:35:38] DONE compressed=0 deleted=0 failed=0
+exit code: 0
+abhikhyath@lenovo-LOQ11:~/lab23$ ./rotate_logs.sh; echo "exit code: $?"   # second run
+[2026-10-07 16:35:38] START dir=./logs age>7d retention>30d dry_run=0
+[2026-10-07 16:35:38] DONE compressed=0 deleted=0 failed=0
+exit code: 0
+abhikhyath@lenovo-LOQ11:~/lab23$ ./rotate_logs.sh -a x; echo "exit code: $?"
+[2026-10-07 16:35:38] ERROR: DAYS must be a non-negative integer (got 'x')
+exit code: 1

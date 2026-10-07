@@ -1,0 +1,11 @@
+abhikhyath@lenovo-LOQ11:~/lab23$ ./rotate_logs.sh --help
+Usage: rotate_logs.sh [-d DIR] [-a DAYS] [-r RETENTION_DAYS] [-n|--dry-run] [-h|--help]
+
+  -d, --dir DIR          log folder              (env LOG_DIR, default ./logs)
+  -a, --age DAYS         gzip .log older than    (env DAYS, default 7)
+  -r, --retention DAYS   delete .gz older than   (env RETENTION_DAYS, default 30)
+  -n, --dry-run          show actions, change nothing
+  -h, --help             show this help
+
+Example: rotate_logs.sh -d /var/log/myapp -a 7 -r 30
+Exit codes: 0 ok, 1 usage error, 2 folder missing, 3 compression failure
